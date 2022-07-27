@@ -1,0 +1,31 @@
+hostname r1
+buggy
+!
+logging file debug ../binTmp/zzz67r1-log.run
+!
+vrf definition tester
+ exit
+!
+vrf definition v1
+ rd 1:1
+ exit
+!
+interface ethernet1
+ sgt enable
+ vrf forwarding v1
+ ipv4 address 1.1.1.1 255.255.255.0
+ no shutdown
+ no log-link-change
+ exit
+!
+!
+!
+server telnet tester
+ security protocol telnet
+ no exec authorization
+ no login authentication
+ vrf v1
+ exit
+!
+!
+end
