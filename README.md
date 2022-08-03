@@ -6,6 +6,7 @@ freeRtr Security tests
 ## IPSEC
 - [IPSec]()
 
+## Wireguard
 ## SGT
 
 - [SGT]()
