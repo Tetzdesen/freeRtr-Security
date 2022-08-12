@@ -7,6 +7,8 @@ freeRtr Security tests
 - [IPSec]()
 
 ## Wireguard
+
+- [Wireguard]()
 ## SGT
 
 - [SGT]()
